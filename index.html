@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header" >
+    <div class="header__container container">
+      <a href="#" class="nav__logo">
+        <img class="nav__img" src="./img/logo.svg" alt="">
+        <span class="nav__title">Einstein Trade</h1>
+      </a>
+      <nav>
+            <!-- <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>   -->
+
+            <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+              <span class="burger-line"></span>
+            </button>
+
+          <ul class="nav__menu-items menu" data-menu>
+            <li><a href="#hero" data-menu-item>Главная</a></li>
+            <li><a href="#about" data-menu-item>Для кого?</a></li>
+            <li><a href="#indicators" data-menu-item>Индикаторы</a></li>
+            <li><a href="#rates" data-menu-item>Тарифы</a></li>
+            <li class="nav__social" data-menu-item>
+              <a href="https://t.me/ALexverif"><img src="./img/telegramLogo.svg" alt=""></a>
+              <a href="https://www.youtube.com/@SmartSkilledTeam"><img src="./img/youtubeLogo.svg" alt=""></a>
+            </li>
+          </ul>
+    </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero" id="hero">
+      <div class="hero__container container">
+        <div class="hero__text">
+          <span>УМНЫЙ ТРЕЙДИНГ</span>
+          <h1 class="hero__title">Einstein Trade</h1>
+          <p class="hero__subtitle">Качественные инструменты технического анализа для трейдеров</p>
+          <div class="hero__btns">
+            <a href="" class="hero__btn btn yellow-btn hover-btn">
+              <p>Подключиться</p>
+              <img src="img/arrow.svg" alt=""></a>
+            <a href="" class="hero__btn btn hover-btn"> 
+              <p>Подробнее</p>
+            </a>
+          </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/einstein.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <div class="about" id="about">
+      <div class="about__container container">
+        <div class="block-title">
+          <span class="title-line"></span>
+          <p>Кому помогут </br>наши инструменты?</p>
+        </div>
+        <ul class="about__cards">
+          <li class="about__card">
+            <div class="about__card-wrapper">
+              <div class="logo-bg">
+                <img src="img/card1.svg"  alt="">
+              </div>
+              <h3 class="about__title">Новичкам</h3>
+              <p class="about__text">
+                Если у&nbsp;Вас нет знаний в&nbsp;управлении финансами и&nbsp;Вы желаете освоить один из&nbsp;самых высокодоходных навыков в&nbsp;нише трейдинга.
+              </p>
+            </div>
+          </li>
+          <li class="about__card">
+            <div class="about__card-wrapper">
+              <div class="logo-bg">
+                <img src="img/card2.svg"  alt="">
+              </div>
+              <h3 class="about__title">Инвесторам</h3>
+              <p class="about__text">
+                Имеете установившийся капитал, который инвестируете в&nbsp;активы и&nbsp;хотите открыть новый источник денежного потока.
+              </p>
+            </div>
+          </li>
+          <li class="about__card">
+            <div class="about__card-wrapper">
+              <div class="logo-bg">
+                <img src="img/card3.svg"  alt="">
+              </div>
+              <h3 class="about__title">Трейдерам</h3>
+              <p class="about__text">Уже торгуете и хотите улучшить свои результаты, чтобы перестать  стоять на месте. Хотите изучить новый подход к торговле.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="indicators" id="indicators">
+      <div class="indicators__container container">
+        <div class="block-title">
+          <span class="title-line"></span>
+          <p>Индикаторы</p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper indicators__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide">
+              <div class="slide-img">
+                <img src="./img/slides/1.png" alt="">
+              </div>
+              <div class="slide-wrapper">
+                <strong class="slide-title">Trend</strong>
+                <p class="slide-text">
+                  Наш индикатор тренда позволяет понять в любой момент времени, кто превалирует на рынке, быки или медведи, и быть на сильной стороне, а не пытаться торговать против тренда.
+                </p>
+                  <a href="#popup1" class="btn hover-btn">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="slide-img">
+                <img src="./img/slides/2.png" alt="">
+              </div>
+              <div class="slide-wrapper">
+                <strong class="slide-title">Waves</strong>
+                <p class="slide-text">Торгуете акции? Не проблема! Наши разработки помогут вам при решении любых задач</p>
+                  <a href="#popup2" class="btn hover-btn">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="slide-img">
+                <img src="./img/slides/3.png" alt="">
+              </div>
+              <div class="slide-wrapper">
+                <strong class="slide-title">Денежный поток</strong>
+                <p class="slide-text">Часто возникает вопрос, как определить, когда крупные участники рынка (киты) начинают распределять свои активы (продавать).</p>
+                  <a href="#popup3" class="btn hover-btn">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="slide-img">
+                <img src="./img/slides/4.png" alt="">
+              </div>
+              <div class="slide-wrapper">
+                <strong class="slide-title">Shark Monitor</strong>
+                <p class="slide-text">Нет времени следить за графиками, но хотите быть в курсе смены направления движения на активах?</p>
+                <a href="#popup4" class="btn hover-btn">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="slide-img">
+                <img src="./img/slides/5.png" alt="">
+              </div>
+              <div class="slide-wrapper">
+                <strong class="slide-title">Тренд 2</strong>
+                <p class="slide-text">Удобно, когда в каждый момент времени, на любом активе и таймфрейме у вас есть помощник, который подскажет в какую сторону предпочтительно торговать? </p>
+                <a href="#popup5" class="btn hover-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div id="popup1" class="popup">
+          <div id="popup__close"class="popup__close"></div>
+          <a href="#popup__close"class="popup__area">
+
+          </a>
+          <div class="popup__body">
+            <div class="popup__content">
+              Наш индикатор тренда позволяет понять в любой момент времени, кто превалирует на рынке, быки или медведи, и быть на сильной стороне, а не пытаться торговать против тренда. 
+              Отлично работает на любых криптовалютах, валютных парах и рынке акций. Рекомендуется использовать на таймфреймах от 4ч и выше, для устранения шуов суточной волатильности. 
+              Идеально подойдет для тех кто не спешит заработать миллионы за один день, а готов следовать тренду и получать стабильный заработок.
+              На скринах ниже можно ознакомиться с его работой на римере актива GRT
+            </div>
+          </div>
+        </div>
+        <div id="popup2" class="popup">
+          <div id="popup__close"class="popup__close"></div>
+          <a href="#popup__close"class="popup__area">
+
+          </a>
+          <div class="popup__body">
+            <div class="popup__content">
+              Торгуете акции? Не проблема! Наши разработки помогут вам при решении любых задач: 
+              торговле внутри дня, среднесрочной торговле и инвестировании. 
+              Все еще считаете что рынок хаотичен? Посмотрите отработку индикатора на графике акций Газпрома
+            </div>
+          </div>
+        </div>
+        <div id="popup3" class="popup">
+          <div id="popup__close"class="popup__close"></div>
+          <a href="#popup__close"class="popup__area">
+
+          </a>
+          <div class="popup__body">
+            <div class="popup__content">
+              Часто возникает вопрос, как определить, когда крупные участники рынка (киты) начинают распределять свои активы (продавать). 
+              Для этого мы разработали индикатор активности участников рынка (крупных и мелких), который указывает на перевес действий крупных игроков в сторону продаж или покупок, 
+              при этом цена актива может двигаться в любую сторону (в зависимости от этого определяется, идет накопление актива или его распределение)
+            </div>
+          </div>
+        </div>
+        <div id="popup4" class="popup">
+          <div id="popup__close"class="popup__close"></div>
+          <a href="#popup__close"class="popup__area">
+
+          </a>
+          <div class="popup__body">
+            <div class="popup__content">
+              Нет времени следить за графиками, но хотите быть в курсе смены направления движения на активах? Наш алгоритм отслеживает смены трендов и сигнализирует прямо на графике в trading view, 
+              вам остается лишь изредка проверить уведомления, остальной анализ будет сделан за вас. На графике один из примеров отработки на активе SOLUSDT после его откатного движения вниз
+            </div>
+          </div>
+        </div>
+        <div id="popup5" class="popup">
+          <div id="popup__close"class="popup__close"></div>
+          <a href="#popup__close"class="popup__area">
+
+          </a>
+          <div class="popup__body">
+            <div class="popup__content">
+              Удобно, когда в каждый момент времени, на любом активе и таймфрейме у вас есть помощник, который подскажет в какую сторону предпочтительно торговать? 
+              Наша разработка умеет и это, а также сразу покажет где ближайшая точка перелома текущего тренда. Работает на любых таймфреймах, даже самых младших. 
+              Кстати, один из примеров работы: подсказка о смене тренда на нисходящий появилась на значении 59655$ за 1 BTC. 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rates" id="rates">
+        <div class="rates__container container">
+          <div class="block-title">
+            <span class="title-line"></span>
+            <p>Тарифы</p>
+          </div>
+          <ul class="rates__items">
+            <li class="rates__item">
+              <strong class="rates__title">Basic</strong>
+              <ul class="rates__privileges">
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к 6 революционным индикаторам</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к материалам для максимально продуктивной работы с индикаторами</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Круглосуточная поддержка</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/dislike.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к новым будущим индикаторам</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/dislike.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к новым будущим индикаторам</p>
+                </li>
+              </ul>
+              <div class="rates__pay">
+                <a href="https://t.me/ALexverif" class="rates__pay-btn btn hover-btn">Оплатить тариф</a>
+                <p class="rates__cost"><span>120$</span> в мес.</p>
+              </div>
+            </li>
+            <li class="rates__item">
+              <strong class="rates__title"> Pro</strong>
+              <ul class="rates__privileges">
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к 6 революционным индикаторам</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к материалам для максимально продуктивной работы с индикаторами</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Круглосуточная поддержка</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к новым будущим индикаторам</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к новым будущим индикаторам</p>
+                </li>
+              </ul>
+              <div class="rates__pay">
+                <a href="https://t.me/ALexverif" class="rates__pay-btn btn hover-btn">Оплатить тариф</a>
+                <p class="rates__cost"><span>120$</span> в мес.</p>
+              </div>
+            </li>
+            <li class="rates__item">
+              <strong class="rates__title">Premium</strong>
+              <ul class="rates__privileges">
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к 6 революционным индикаторам</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к материалам для максимально продуктивной работы с индикаторами</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/like.svg" class="rates__img"alt="">
+                  <p class="rates__text">Круглосуточная поддержка</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/dislike.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к новым будущим индикаторам</p>
+                </li>
+                <li class="rates__privilege">
+                  <img src="./img/dislike.svg" class="rates__img"alt="">
+                  <p class="rates__text">Доступ к новым будущим индикаторам</p>
+                </li>
+              </ul>
+              <div class="rates__pay">
+                <a href="https://t.me/ALexverif" class="rates__pay-btn btn hover-btn">Оплатить тариф</a>
+                <p class="rates__cost"><span>120$</span> в мес.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="questions" id=""> -->
+        <!-- <div class="questions__container container">
+          <div class="block-title">
+            <span class="title-line"></span>
+            <p>Часто задаваемые<br>вопросы</p>
+          </div>
+          <ul class="questions__content">
+            <li class="questions__item">
+              <div class="questions__info">
+                <h4 class="questions__title">Что делать если возникли проблемы с индикатором?</h4>
+                <a href="#questions__text-1"class="questions__btn"></a>
+              </div>
+              <p id="questions__text-1" class="questions__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ipsa facilis quasi mollitia debitis consequatur dolorum deleniti illum. Excepturi accusamus natus fuga saepe sit sapiente quam nam! Qui, nobis facere.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="container" id="questions">
+        <div class="block-title">
+          <span class="title-line"></span>
+          <p>Часто задаваемые<br>вопросы</p>
+        </div>
+        <div class="ex ex-3">
+          <ul class="accordion__list">
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Что делать если возникли проблемы с индикатором?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>Наши специалисты всегда помогут с решением проблем</p>
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Как мне помогут индикаторы если я новичок?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                Вы сразу начнёте видеть на графике то что не видят 99% других трейдеров. 
+                Также Вы имеете возможность пообщаться с автором и командой лично на прямых эфирах, вы получите ответы на любые вопросы
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Для какой платформы созданы ваши индикаторы?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                Мы кодируем все наши индикаторы на Pine Script, который используется на платформе TradingView
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Нужна-ли мне платная учётная запись на TradingView 
+                  чтобы пользоваться вашими индикаторами?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                Все наши индикаторы прекрасно работают на бесплатной учетной записи TradingView
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__text"> 
+        <p class="footer__item">2022&nbsp;&copy; Все права защищены</p>
+        <a href="#" class="footer__item">Политика конфиденциальности</a>
+        <a href="#" class="footer__item">Договор оферты</a>
+      </div>
+      <div class="footer__socials"> 
+        <a href="https://www.youtube.com/@SmartSkilledTeam"><img src="./img/youtubeLogo.svg" alt="YoutubeLogo"></a>
+        <a href="https://t.me/ALexverif"><img src="./img/telegramLogo.svg" alt="TelegramLogo"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

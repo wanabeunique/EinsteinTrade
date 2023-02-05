@@ -1,0 +1,78 @@
+// отступы  
+$big-offset: 120px
+$middle-offset: 60px
+
+//общие классы
+.container
+  max-width: 1290px
+  padding: 0px 15px
+  margin: 0 auto
+
+.btn
+  border: 1px solid #E5AF2466
+  display: flex
+  justify-content: center
+  padding: 15px 25px
+  align-items: center
+  border-radius: 10px
+  p
+    font-size: 24px
+    line-height: 36px
+    color: $white-color
+  img
+    margin-left: 10px
+
+.hover-btn
+  transition: all .4s ease-in-out
+  &:hover
+    background-color: $yellow-color
+    box-shadow: 0px 0px 35px rgba(229, 175, 36, 0.45)
+    p
+      color: $black-color
+// блок с желтой линией и заголовком
+.block-title
+  display: flex
+  align-items: center
+  .title-line
+    display: block
+    width: 100px
+    height: 10px
+    background: $yellow-color
+    margin-right: 30px
+  p
+    font-weight: 600
+    font-size: 64px
+    line-height: 70px
+    color: $white-color
+
+@media (max-width: 600px)
+  .block-title
+    p
+      font-size: 50px
+
+@media (max-width: 467px)
+  .block-title
+    p
+      font-size: 30px
+      line-height: 50px
+
+.logo-bg
+  position: relative
+  width: 90px
+  height: 90px
+  background: $yellow-color
+  border-radius: 45px
+  img
+    width: 60px
+    height: 60px
+    position: absolute
+    left: 15px
+    top: 15px
+
+.bg-gradient
+  background: rgb(54,11,32)
+  background: linear-gradient(90deg, rgba(54,11,32,1) 0%, rgba(11,7,7,1) 16%, rgba(41,6,23,1) 100%)
+
+.bg-gradient2
+  background: rgb(54,11,32)
+  background: linear-gradient(90deg, rgba(54,11,32,1) 100%, rgba(11,7,7,1) 16%, rgba(41,6,23,1) 0%)
